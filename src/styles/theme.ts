@@ -1,16 +1,27 @@
-import { extendTheme } from '@chakra-ui/react'
+import {
+  createStandaloneToast,
+  extendTheme,
+  ThemeConfig,
+} from '@chakra-ui/react'
+
+const config: ThemeConfig = {
+  initialColorMode: 'light',
+  useSystemColorMode: false,
+}
 
 export const theme = extendTheme({
-    fonts: {
-        heading: 'Open Sans',
-        body: 'Open Sans',
+  config,
+  fonts: {
+    heading: 'Open Sans',
+    body: 'Open Sans',
+  },
+  styles: {
+    global: {
+      body: {
+        bg: '#FFFFFF',
+        color: '#67748E',
+      },
     },
-    styles: {
-        global: {
-            body: {
-                bg: '#FFFFFF',
-                color: '#141414'
-            }
-        }
-    }
+  },
 })
+export const toast = createStandaloneToast({ theme })

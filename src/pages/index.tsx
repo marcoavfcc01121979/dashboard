@@ -1,8 +1,5 @@
-import Head from 'next/head'
-import Image from 'next/image'
+import Layout from '../layout/sidebar'
 
 export default function Home() {
-  return (
-    <h1>Dashboard</h1>
-  )
+  return <Layout>Home</Layout>
 }

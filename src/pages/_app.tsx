@@ -1,11 +1,14 @@
 import { ChakraProvider } from '@chakra-ui/react'
 import { AppProps } from 'next/app'
+import ThemeToggleProvider from '../contexts/toggle-provider'
 import { theme } from '../styles/theme'
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return(
+  return (
     <ChakraProvider theme={theme}>
-      <Component {...pageProps} />
+      <ThemeToggleProvider initialSchema={'dark'}>
+        <Component {...pageProps} />
+      </ThemeToggleProvider>
     </ChakraProvider>
   )
 }
