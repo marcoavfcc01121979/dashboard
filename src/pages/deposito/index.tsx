@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Table, Thead, Tr, Th } from '@chakra-ui/react'
+import { Box, Flex, Heading, Table, Thead, Tr, Th, Tbody, Td } from '@chakra-ui/react'
 
 import { Header } from "../../components/Header";
 
@@ -14,27 +14,233 @@ export default function Deposito() {
                             Histórico de Depósitos
                         </Heading>
                     </Flex>
-                    <Table colorScheme="whiteAlpha">
+                    <Table colorScheme="whiteAlpha" size="sm" variant="simple">
                         <Thead>
                             <Tr>
                                 <Th textTransform="capitalize" color="gray" fontSize="14" fontWeight="bold">Cliente</Th>
                                 <Th color="gray" fontSize="14" fontWeight="bold">CPF</Th>
-                                <Flex>
-                                    <Flex flexDir="column" align="center">
-                                        <Th  textTransform="capitalize" color="gray" fontSize="14" fontWeight="bold">Saldo</Th>
-                                        <Th  textTransform="capitalize" color="gray" fontSize="14" fontWeight="bold">Pré-depósito(US$)</Th>
-                                    </Flex>
-                                    <Flex flexDir="column" align="center">
-                                        <Th  textTransform="capitalize" color="gray" fontSize="14" fontWeight="bold">Saldo</Th>
-                                        <Th  textTransform="capitalize" color="gray" fontSize="14" fontWeight="bold">Atualizado(US$)</Th>
-                                    </Flex>
-                                </Flex>
+                                <Th textTransform="capitalize" color="gray" fontSize="14" fontWeight="bold">valor</Th>
                                 <Th  textTransform="capitalize" color="gray" fontSize="14" fontWeight="bold">Data</Th>
                                 <Th  textTransform="capitalize" color="gray" fontSize="14" fontWeight="bold">Hora</Th>
+                                <Th  textTransform="capitalize" color="gray" fontSize="14" fontWeight="bold">Saldo Pré-depósito(US$)</Th>
+                                <Th  textTransform="capitalize" color="gray" fontSize="14" fontWeight="bold">Saldo Atualizado(US$)</Th>
                                 <Th color="gray" fontSize="14" fontWeight="bold">Status</Th>
                                 <Th  textTransform="capitalize" color="gray" fontSize="14" fontWeight="bold">Observações</Th>
                             </Tr>
                         </Thead>
+
+                        <Tbody>
+                            <Tr borderBottom="5">
+                                <Td fontSize="12">Luis</Td>
+                                <Td fontSize="12">xxxxxxxxxxx</Td>
+                                <Td fontSize="12" px="6">1.000,00</Td>
+                                <Td fontSize="12">20/02/2021</Td>
+                                <Td fontSize="12" px="6">15:30</Td>
+                                <Td fontSize="12">1.000,00</Td> 
+                                <Td fontSize="12">2.000,00</Td>
+                                <Td fontSize="12" textTransform="uppercase" bg="#68D391" borderRadius="15%">anchor</Td>                  
+                            </Tr>
+                            <Tr>
+                                <Td fontSize="12">Luis</Td>
+                                <Td fontSize="12">xxxxxxxxxxx</Td>
+                                <Td fontSize="12" px="6">1.000,00</Td>
+                                <Td fontSize="12">20/02/2021</Td>
+                                <Td fontSize="12" px="6">15:30</Td>
+                                <Td fontSize="12">1.000,00</Td> 
+                                <Td fontSize="12">2.000,00</Td>
+                                <Td fontSize="12" textTransform="uppercase" bg="#A0AEC0" borderRadius="15%">pendente</Td>                  
+                            </Tr>
+                            <Tr>
+                                <Td fontSize="12">Luis</Td>
+                                <Td fontSize="12">xxxxxxxxxxx</Td>
+                                <Td fontSize="12" px="6">1.000,00</Td>
+                                <Td fontSize="12">20/02/2021</Td>
+                                <Td fontSize="12" px="6">15:30</Td>
+                                <Td fontSize="12">1.000,00</Td> 
+                                <Td fontSize="12">2.000,00</Td>
+                                <Td fontSize="12" textTransform="uppercase" bg="#F6E05E" borderRadius="15%">banco</Td>                  
+                            </Tr>
+                            <Tr>
+                                <Td fontSize="12">Luis</Td>
+                                <Td fontSize="12">xxxxxxxxxxx</Td>
+                                <Td fontSize="12" px="6">1.000,00</Td>
+                                <Td fontSize="12">20/02/2021</Td>
+                                <Td fontSize="12" px="6">15:30</Td>
+                                <Td fontSize="12">1.000,00</Td> 
+                                <Td fontSize="12">2.000,00</Td>
+                                <Td fontSize="12" textTransform="uppercase" bg="#68D391" borderRadius="15%">anchor</Td>                  
+                            </Tr>
+                            <Tr>
+                                <Td fontSize="12">Luis</Td>
+                                <Td fontSize="12">xxxxxxxxxxx</Td>
+                                <Td fontSize="12" px="6">1.000,00</Td>
+                                <Td fontSize="12">20/02/2021</Td>
+                                <Td fontSize="12" px="6">15:30</Td>
+                                <Td fontSize="12">1.000,00</Td> 
+                                <Td fontSize="12">2.000,00</Td>
+                                <Td fontSize="12" textTransform="uppercase" bg="#A0AEC0" borderRadius="15%">pendente</Td>                  
+                            </Tr>
+                            <Tr>
+                                <Td fontSize="12">Luis</Td>
+                                <Td fontSize="12">xxxxxxxxxxx</Td>
+                                <Td fontSize="12" px="6">1.000,00</Td>
+                                <Td fontSize="12">20/02/2021</Td>
+                                <Td fontSize="12" px="6">15:30</Td>
+                                <Td fontSize="12">1.000,00</Td> 
+                                <Td fontSize="12">2.000,00</Td>
+                                <Td fontSize="12" textTransform="uppercase" bg="#F6E05E" borderRadius="15%">banco</Td>                  
+                            </Tr>
+                            <Tr>
+                                <Td fontSize="12">Luis</Td>
+                                <Td fontSize="12">xxxxxxxxxxx</Td>
+                                <Td fontSize="12" px="6">1.000,00</Td>
+                                <Td fontSize="12">20/02/2021</Td>
+                                <Td fontSize="12" px="6">15:30</Td>
+                                <Td fontSize="12">1.000,00</Td> 
+                                <Td fontSize="12">2.000,00</Td>
+                                <Td fontSize="12" textTransform="uppercase" bg="#68D391" borderRadius="15%">anchor</Td>                  
+                            </Tr>
+                            <Tr>
+                                <Td fontSize="12">Luis</Td>
+                                <Td fontSize="12">xxxxxxxxxxx</Td>
+                                <Td fontSize="12" px="6">1.000,00</Td>
+                                <Td fontSize="12">20/02/2021</Td>
+                                <Td fontSize="12" px="6">15:30</Td>
+                                <Td fontSize="12">1.000,00</Td> 
+                                <Td fontSize="12">2.000,00</Td>
+                                <Td fontSize="12" textTransform="uppercase" bg="#A0AEC0" borderRadius="15%">pendente</Td>                  
+                            </Tr>
+                            <Tr>
+                                <Td fontSize="12">Luis</Td>
+                                <Td fontSize="12">xxxxxxxxxxx</Td>
+                                <Td fontSize="12" px="6">1.000,00</Td>
+                                <Td fontSize="12">20/02/2021</Td>
+                                <Td fontSize="12" px="6">15:30</Td>
+                                <Td fontSize="12">1.000,00</Td> 
+                                <Td fontSize="12">2.000,00</Td>
+                                <Td fontSize="12" textTransform="uppercase" bg="#F6E05E" borderRadius="15%">banco</Td>                  
+                            </Tr>
+                            <Tr>
+                                <Td fontSize="12">Luis</Td>
+                                <Td fontSize="12">xxxxxxxxxxx</Td>
+                                <Td fontSize="12" px="6">1.000,00</Td>
+                                <Td fontSize="12">20/02/2021</Td>
+                                <Td fontSize="12" px="6">15:30</Td>
+                                <Td fontSize="12">1.000,00</Td> 
+                                <Td fontSize="12">2.000,00</Td>
+                                <Td fontSize="12" textTransform="uppercase" bg="#68D391" borderRadius="15%">anchor</Td>                  
+                            </Tr>
+                            <Tr>
+                                <Td fontSize="12">Luis</Td>
+                                <Td fontSize="12">xxxxxxxxxxx</Td>
+                                <Td fontSize="12" px="6">1.000,00</Td>
+                                <Td fontSize="12">20/02/2021</Td>
+                                <Td fontSize="12" px="6">15:30</Td>
+                                <Td fontSize="12">1.000,00</Td> 
+                                <Td fontSize="12">2.000,00</Td>
+                                <Td fontSize="12" textTransform="uppercase" bg="#A0AEC0" borderRadius="15%">pendente</Td>                  
+                            </Tr>
+                            <Tr>
+                                <Td fontSize="12">Luis</Td>
+                                <Td fontSize="12">xxxxxxxxxxx</Td>
+                                <Td fontSize="12" px="6">1.000,00</Td>
+                                <Td fontSize="12">20/02/2021</Td>
+                                <Td fontSize="12" px="6">15:30</Td>
+                                <Td fontSize="12">1.000,00</Td> 
+                                <Td fontSize="12">2.000,00</Td>
+                                <Td fontSize="12" textTransform="uppercase" bg="#F6E05E" borderRadius="15%">banco</Td>                  
+                            </Tr>
+                            <Tr>
+                                <Td fontSize="12">Luis</Td>
+                                <Td fontSize="12">xxxxxxxxxxx</Td>
+                                <Td fontSize="12" px="6">1.000,00</Td>
+                                <Td fontSize="12">20/02/2021</Td>
+                                <Td fontSize="12" px="6">15:30</Td>
+                                <Td fontSize="12">1.000,00</Td> 
+                                <Td fontSize="12">2.000,00</Td>
+                                <Td fontSize="12" textTransform="uppercase" bg="#68D391" borderRadius="15%">anchor</Td>                  
+                            </Tr>
+                            <Tr>
+                                <Td fontSize="12">Luis</Td>
+                                <Td fontSize="12">xxxxxxxxxxx</Td>
+                                <Td fontSize="12" px="6">1.000,00</Td>
+                                <Td fontSize="12">20/02/2021</Td>
+                                <Td fontSize="12" px="6">15:30</Td>
+                                <Td fontSize="12">1.000,00</Td> 
+                                <Td fontSize="12">2.000,00</Td>
+                                <Td fontSize="12" textTransform="uppercase" bg="#A0AEC0" borderRadius="15%">pendente</Td>                  
+                            </Tr>
+                            <Tr>
+                                <Td fontSize="12">Luis</Td>
+                                <Td fontSize="12">xxxxxxxxxxx</Td>
+                                <Td fontSize="12" px="6">1.000,00</Td>
+                                <Td fontSize="12">20/02/2021</Td>
+                                <Td fontSize="12" px="6">15:30</Td>
+                                <Td fontSize="12">1.000,00</Td> 
+                                <Td fontSize="12">2.000,00</Td>
+                                <Td fontSize="12" textTransform="uppercase" bg="#F6E05E" borderRadius="15%">banco</Td>                  
+                            </Tr>
+                            <Tr>
+                                <Td fontSize="12">Luis</Td>
+                                <Td fontSize="12">xxxxxxxxxxx</Td>
+                                <Td fontSize="12" px="6">1.000,00</Td>
+                                <Td fontSize="12">20/02/2021</Td>
+                                <Td fontSize="12" px="6">15:30</Td>
+                                <Td fontSize="12">1.000,00</Td> 
+                                <Td fontSize="12">2.000,00</Td>
+                                <Td fontSize="12" textTransform="uppercase" bg="#68D391" borderRadius="15%">anchor</Td>                  
+                            </Tr>
+                            <Tr>
+                                <Td fontSize="12">Luis</Td>
+                                <Td fontSize="12">xxxxxxxxxxx</Td>
+                                <Td fontSize="12" px="6">1.000,00</Td>
+                                <Td fontSize="12">20/02/2021</Td>
+                                <Td fontSize="12" px="6">15:30</Td>
+                                <Td fontSize="12">1.000,00</Td> 
+                                <Td fontSize="12">2.000,00</Td>
+                                <Td fontSize="12" textTransform="uppercase" bg="#A0AEC0" borderRadius="15%">pendente</Td>                  
+                            </Tr>
+                            <Tr>
+                                <Td fontSize="12">Luis</Td>
+                                <Td fontSize="12">xxxxxxxxxxx</Td>
+                                <Td fontSize="12" px="6">1.000,00</Td>
+                                <Td fontSize="12">20/02/2021</Td>
+                                <Td fontSize="12" px="6">15:30</Td>
+                                <Td fontSize="12">1.000,00</Td> 
+                                <Td fontSize="12">2.000,00</Td>
+                                <Td fontSize="12" textTransform="uppercase" bg="#F6E05E" borderRadius="15%">banco</Td>                  
+                            </Tr>
+                            <Tr>
+                                <Td fontSize="12">Luis</Td>
+                                <Td fontSize="12">xxxxxxxxxxx</Td>
+                                <Td fontSize="12" px="6">1.000,00</Td>
+                                <Td fontSize="12">20/02/2021</Td>
+                                <Td fontSize="12" px="6">15:30</Td>
+                                <Td fontSize="12">1.000,00</Td> 
+                                <Td fontSize="12">2.000,00</Td>
+                                <Td fontSize="12" textTransform="uppercase" bg="#68D391" borderRadius="15%">anchor</Td>                  
+                            </Tr>
+                            <Tr>
+                                <Td fontSize="12">Luis</Td>
+                                <Td fontSize="12">xxxxxxxxxxx</Td>
+                                <Td fontSize="12" px="6">1.000,00</Td>
+                                <Td fontSize="12">20/02/2021</Td>
+                                <Td fontSize="12" px="6">15:30</Td>
+                                <Td fontSize="12">1.000,00</Td> 
+                                <Td fontSize="12">2.000,00</Td>
+                                <Td fontSize="12" textTransform="uppercase" bg="#A0AEC0" borderRadius="15%">pendente</Td>                  
+                            </Tr>
+                            <Tr>
+                                <Td fontSize="12">Luis</Td>
+                                <Td fontSize="12">xxxxxxxxxxx</Td>
+                                <Td fontSize="12" px="6">1.000,00</Td>
+                                <Td fontSize="12">20/02/2021</Td>
+                                <Td fontSize="12" px="6">15:30</Td>
+                                <Td fontSize="12">1.000,00</Td> 
+                                <Td fontSize="12">2.000,00</Td>
+                                <Td fontSize="12" textTransform="uppercase" bg="#F6E05E" borderRadius="15%">banco</Td>                  
+                            </Tr>
+                        </Tbody>
                     </Table>
                 </Box>
             </Flex>
