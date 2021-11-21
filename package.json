@@ -33,6 +33,7 @@
     "react-icons": "^4.2.0",
     "react-input-mask": "^2.0.4",
     "react-is": "^17.0.2",
+    "react-table": "^7.7.0",
     "react-toastify": "^7.0.4",
     "react-toggle-dark-mode": "^1.0.4",
     "react-transition-group": "^4.4.2",
@@ -41,6 +42,7 @@
   "devDependencies": {
     "@types/node": "^16.11.8",
     "@types/react": "^17.0.35",
+    "@types/react-table": "^7.7.8",
     "eslint": "8.2.0",
     "eslint-config-airbnb": "19.0.0",
     "eslint-config-next": "12.0.4",

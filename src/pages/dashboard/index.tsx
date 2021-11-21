@@ -3,6 +3,8 @@ import React from 'react'
 import StatsCard from '../../components/cards/stats'
 import { mockedStatsCard } from '../../components/cards/stats/mock'
 import Layout from '../../layout/sidebar'
+import Chat from './chat'
+import Depositos from './depositos'
 import Spread from './spread'
 
 export default function Dashboard() {
@@ -27,17 +29,13 @@ export default function Dashboard() {
 
       {/** gráficos */}
 
-      <Grid
-        mt="5"
-        columns={{ base: 1, sm: 2 }}
-        gap="5"
-        templateColumns="1fr 2fr"
-      >
-        <Spread />
+      <Grid mt="5" gap="5" templateColumns={{ md: '1fr', xl: '1.3fr 2fr' }}>
+        <Depositos />
         <Spread />
       </Grid>
 
       {/** chat e solicitções de saques*/}
+      <Chat />
     </Layout>
   )
 }

@@ -33,7 +33,7 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
       {...rest}
     >
       <Flex h="20" alignItems="center" mx="8" justifyContent="space-between">
-        <Text fontSize="xl" fontWeight="bold">
+        <Text fontSize="1xl" fontWeight="bold">
           Olá, Paulo
         </Text>
         <CloseButton display={{ base: 'flex', md: 'none' }} onClick={onClose} />
@@ -45,7 +45,7 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
           icon={link.icon}
           selected={`/${link.href}` === router.pathname}
         >
-          {link.name}
+          <Text fontSize=".9rem">{link.name}</Text>
         </NavItem>
       ))}
     </Box>

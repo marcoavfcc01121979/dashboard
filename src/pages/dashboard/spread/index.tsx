@@ -4,7 +4,7 @@ import SpreadGraph from '../../../components/graphs/spread'
 
 const Spread = () => {
   return (
-    <Box p={'3'} bg={'gray.50'} shadow={'xl'} rounded={'1rem'}>
+    <Box p={'4'} bg={'gray.50'} shadow={'xl'} rounded={'1rem'}>
       <Heading fontWeight="bold" color="#252F40" fontSize="xl">
         Spread
       </Heading>

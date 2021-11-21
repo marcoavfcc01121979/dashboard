@@ -8,7 +8,6 @@ const SpreadGraph = () => {
     <ReactApexChart
       options={{
         chart: {
-          height: 350,
           type: 'area',
         },
         dataLabels: {
@@ -50,7 +49,7 @@ const SpreadGraph = () => {
         },
       ]}
       type="area"
-      height={350}
+      height={'400'}
     />
   )
 }
