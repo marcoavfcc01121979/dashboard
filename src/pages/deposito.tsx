@@ -1,5 +1,7 @@
+import { Header } from "../components/Header";
+
 export default function Deposito() {
     return (
-        <h1>Deposito</h1>
+        <Header name="Depósitos" />
     )
 }
