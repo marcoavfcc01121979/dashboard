@@ -1,4 +1,4 @@
-import { Flex, FlexProps, Link } from '@chakra-ui/react'
+import { Flex, FlexProps, Link, Text } from '@chakra-ui/layout'
 import React, { ReactNode } from 'react'
 import { IconType } from 'react-icons'
 import DefaultIcon from '../../../components/default-icon'
@@ -27,7 +27,9 @@ const NavItem = ({ icon, children, href, selected, ...rest }: NavItemProps) => {
         {...rest}
       >
         {icon && <DefaultIcon selected={selected} icon={icon} />}
-        {children}
+        <Text fontWeight={selected && 'bold'} fontSize=".9rem">
+          {children}
+        </Text>
       </Flex>
     </Link>
   )

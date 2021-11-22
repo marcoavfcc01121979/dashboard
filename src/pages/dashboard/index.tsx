@@ -28,14 +28,16 @@ export default function Dashboard() {
       </SimpleGrid>
 
       {/** gráficos */}
-
       <Grid mt="5" gap="5" templateColumns={{ md: '1fr', xl: '1.3fr 2fr' }}>
         <Depositos />
         <Spread />
       </Grid>
 
-      {/** chat e solicitções de saques*/}
-      <Chat />
+      {/** chat e solicitações de saques*/}
+      <Grid mt="5" gap="5" templateColumns={{ md: '1fr', xl: '2fr .9fr' }}>
+        <Chat />
+        <Chat />
+      </Grid>
     </Layout>
   )
 }

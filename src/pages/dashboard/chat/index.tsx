@@ -1,51 +1,62 @@
-import {
-  Table,
-  TableCaption,
-  Tbody,
-  Td,
-  Tfoot,
-  Th,
-  Thead,
-  Tr,
-} from '@chakra-ui/react'
+import { Avatar } from '@chakra-ui/avatar'
+import { Heading, HStack, Text } from '@chakra-ui/layout'
+import { Table, TableCaption, Tbody, Td, Th, Thead, Tr } from '@chakra-ui/table'
+import { Tag } from '@chakra-ui/tag'
 import React from 'react'
+import Box from '../../../components/box'
 
 const Chat = () => {
+  const Status = ({ status }: { status: boolean }) => {
+    if (status) return <Tag colorScheme="whatsapp">Resolvido</Tag>
+    return <Tag colorScheme="red">Pendente</Tag>
+  }
+
   return (
-    <Table variant="simple">
-      <TableCaption>Imperial to metric conversion factors</TableCaption>
-      <Thead>
-        <Tr>
-          <Th>To convert</Th>
-          <Th>into</Th>
-          <Th isNumeric>multiply by</Th>
-        </Tr>
-      </Thead>
-      <Tbody>
-        <Tr>
-          <Td>inches</Td>
-          <Td>millimetres (mm)</Td>
-          <Td isNumeric>25.4</Td>
-        </Tr>
-        <Tr>
-          <Td>feet</Td>
-          <Td>centimetres (cm)</Td>
-          <Td isNumeric>30.48</Td>
-        </Tr>
-        <Tr>
-          <Td>yards</Td>
-          <Td>metres (m)</Td>
-          <Td isNumeric>0.91444</Td>
-        </Tr>
-      </Tbody>
-      <Tfoot>
-        <Tr>
-          <Th>To convert</Th>
-          <Th>into</Th>
-          <Th isNumeric>multiply by</Th>
-        </Tr>
-      </Tfoot>
-    </Table>
+    <Box>
+      <Heading fontWeight="bold" color="#252F40" fontSize="xl">
+        Chat
+      </Heading>
+
+      <Text>
+        Respondidos
+        <Text color="#17C1E8" fontWeight="bold" ml="1" display="inline">
+          40%
+        </Text>
+      </Text>
+
+      <Table variant="simple">
+        <TableCaption>Imperial to metric conversion factors</TableCaption>
+        <Thead>
+          <Tr>
+            <Th>Cliente</Th>
+            <Th>Mensagem</Th>
+            <Th>Status</Th>
+          </Tr>
+        </Thead>
+        <Tbody>
+          {Array.from({ length: 10 }, () => ({
+            user: 'Creusa',
+            message: 'Bla bla bla',
+            status: Boolean(Math.round(Math.random())),
+          })).map((x, index: number) => (
+            <Tr key={`item-${index}`}>
+              <Td>
+                <HStack>
+                  <Avatar size="xs" src="https://bit.ly/broken-link" />{' '}
+                  <Text fontWeight="bold" color="#252F40">
+                    {x.user}
+                  </Text>
+                </HStack>
+              </Td>
+              <Td>{x.message}</Td>
+              <Td>
+                <Status status={x.status} />
+              </Td>
+            </Tr>
+          ))}
+        </Tbody>
+      </Table>
+    </Box>
   )
 }
 

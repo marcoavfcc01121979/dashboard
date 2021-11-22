@@ -1,10 +1,11 @@
-import { Box, Heading, Stat, StatArrow, StatHelpText } from '@chakra-ui/react'
+import { Heading, Stat, StatArrow, StatHelpText } from '@chakra-ui/react'
 import React from 'react'
+import Box from '../../../components/box'
 import SpreadGraph from '../../../components/graphs/spread'
 
 const Spread = () => {
   return (
-    <Box p={'4'} bg={'gray.50'} shadow={'xl'} rounded={'1rem'}>
+    <Box>
       <Heading fontWeight="bold" color="#252F40" fontSize="xl">
         Spread
       </Heading>

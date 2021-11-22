@@ -5,7 +5,7 @@ const ReactApexChart = dynamic(() => import('react-apexcharts'), { ssr: false })
 
 const Depositos = () => {
   return (
-    <Box bg="#232743" p="1" mb="8" rounded="2xl">
+    <Box bg="#232743" p="1" mb="5" rounded="2xl">
       <ReactApexChart
         options={{
           theme: {

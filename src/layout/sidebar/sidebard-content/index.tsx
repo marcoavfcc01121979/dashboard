@@ -45,7 +45,7 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
           icon={link.icon}
           selected={`/${link.href}` === router.pathname}
         >
-          <Text fontSize=".9rem">{link.name}</Text>
+          {link.name}
         </NavItem>
       ))}
     </Box>
