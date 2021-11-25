@@ -1,5 +1,5 @@
 import { Heading, Text } from '@chakra-ui/layout'
-import { subHours } from 'date-fns'
+import { subMinutes } from 'date-fns'
 import React from 'react'
 import Box from '../../../components/box'
 import SaqueItem from './item'
@@ -23,7 +23,7 @@ const Saques = () => {
           key={`item-saques-${index}`}
           value={`R$ 1${index + 1},00`}
           user={'Creusa'}
-          date={subHours(new Date(), index + 1)}
+          date={subMinutes(new Date(), index + 1)}
         />
       ))}
     </Box>
