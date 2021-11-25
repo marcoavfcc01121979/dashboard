@@ -14,7 +14,7 @@ const Chat = () => {
   return (
     <Box>
       <Heading fontWeight="bold" color="#252F40" fontSize="xl">
-        Solicitações de Saques
+        Clientes
       </Heading>
 
       <Table variant="simple">
@@ -22,24 +22,24 @@ const Chat = () => {
           <Tr>
             <Th textAlign="center">Nome</Th>
             <Th textAlign="center">Cpf</Th>
-            <Th textAlign="center">Saldo na conta da Time Back</Th>
-            <Th textAlign="center">Valor da Solicitação do Saque</Th>
             <Th textAlign="center">Data</Th>
-            <Th textAlign="center">Hora</Th>
-            <Th textAlign="center">Dados bancários</Th>
-            <Th textAlign="center">Status</Th>
+            <Th textAlign="center">Saldo (US$)</Th>
+            <Th textAlign="center">Saldo Indicações(US$)</Th>
+            <Th textAlign="center">Rentabilidade Acumulada</Th>
+            <Th textAlign="center">Receita Gerada (US$)</Th>
+            {/*<Th>Status</Th>*/}
           </Tr>
         </Thead>
         <Tbody>
           {Array.from({ length: 10 }, () => ({
             user: 'Creusa',
             cpf: 'xxx.xxx.xxx-xx',
-            valor: '1.000,00',
-            valor_solicitacao: '250,00',
             data: '25/11/2021',
-            hora: '12:00',
-            dados_bancario: 'ag-0000-0 / cc-00.000-0',
-            status: Boolean(Math.round(Math.random())),
+            valor: '1.000,00',
+            saldo_indicacoes: '35,00',
+            rentabilidade: '112%',
+            receita: '1000,00',
+            // status: Boolean(Math.round(Math.random())),
           })).map((x, index: number) => (
             <Tr key={`item-${index}`}>
               <Td>
@@ -51,14 +51,11 @@ const Chat = () => {
                 </HStack>
               </Td>
               <Td>{x.cpf}</Td>
-              <Td>{x.valor}</Td>
-              <Td>{x.valor_solicitacao}</Td>
               <Td>{x.data}</Td>
-              <Td>{x.hora}</Td>
-              <Td>{x.dados_bancario}</Td>
-              <Td>
-                <Status status={x.status} />
-              </Td>
+              <Td>{x.valor}</Td>
+              <Td>{x.saldo_indicacoes}</Td>
+              <Td>{x.rentabilidade}</Td>
+              <Td>{x.receita}</Td>
             </Tr>
           ))}
         </Tbody>

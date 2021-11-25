@@ -20,14 +20,14 @@ const Chat = () => {
       <Table variant="simple">
         <Thead>
           <Tr>
-            <Th>Cliente</Th>
-            <Th>Cpf</Th>
-            <Th>Valor do Depósito</Th>
-            <Th>Data</Th>
-            <Th>Hora</Th>
-            <Th>Saldo Pré-depósito</Th>
-            <Th>Saldo Pós-depósito</Th>
-            <Th>Status</Th>
+            <Th textAlign="center">Cliente</Th>
+            <Th textAlign="center">Cpf</Th>
+            <Th textAlign="center">Valor do Depósito</Th>
+            <Th textAlign="center">Data</Th>
+            <Th textAlign="center">Hora</Th>
+            <Th textAlign="center">Saldo Ant</Th>
+            <Th textAlign="center">Saldo</Th>
+            <Th textAlign="center">Status</Th>
           </Tr>
         </Thead>
         <Tbody>
