@@ -2,7 +2,7 @@ import { Heading, Text } from '@chakra-ui/layout'
 import { subMinutes } from 'date-fns'
 import React from 'react'
 import Box from '../../../components/box'
-import SaqueItem from './item'
+import SaqueItem from '../../../components/item'
 
 const Saques = () => {
   return (
