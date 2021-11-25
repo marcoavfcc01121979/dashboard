@@ -14,7 +14,7 @@ const Chat = () => {
   return (
     <Box>
       <Heading fontWeight="bold" color="#252F40" fontSize="xl">
-        Chat
+        Depósitos
       </Heading>
 
       <Text mt="3" mb="8">
