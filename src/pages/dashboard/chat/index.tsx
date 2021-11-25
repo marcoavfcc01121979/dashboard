@@ -1,6 +1,6 @@
 import { Avatar } from '@chakra-ui/avatar'
 import { Heading, HStack, Text } from '@chakra-ui/layout'
-import { Table, TableCaption, Tbody, Td, Th, Thead, Tr } from '@chakra-ui/table'
+import { Table, Tbody, Td, Th, Thead, Tr } from '@chakra-ui/table'
 import { Tag } from '@chakra-ui/tag'
 import React from 'react'
 import Box from '../../../components/box'
@@ -17,7 +17,7 @@ const Chat = () => {
         Chat
       </Heading>
 
-      <Text>
+      <Text mt="3" mb="8">
         Respondidos
         <Text color="#17C1E8" fontWeight="bold" ml="1" display="inline">
           40%
@@ -25,7 +25,6 @@ const Chat = () => {
       </Text>
 
       <Table variant="simple">
-        <TableCaption>Imperial to metric conversion factors</TableCaption>
         <Thead>
           <Tr>
             <Th>Cliente</Th>

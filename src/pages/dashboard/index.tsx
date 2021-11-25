@@ -5,6 +5,7 @@ import { mockedStatsCard } from '../../components/cards/stats/mock'
 import Layout from '../../layout/sidebar'
 import Chat from './chat'
 import Depositos from './depositos'
+import Saques from './saques'
 import Spread from './spread'
 
 export default function Dashboard() {
@@ -36,7 +37,7 @@ export default function Dashboard() {
       {/** chat e solicitações de saques*/}
       <Grid mt="5" gap="5" templateColumns={{ md: '1fr', xl: '2fr .9fr' }}>
         <Chat />
-        <Chat />
+        <Saques />
       </Grid>
     </Layout>
   )

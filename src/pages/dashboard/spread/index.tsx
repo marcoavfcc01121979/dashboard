@@ -9,7 +9,8 @@ const Spread = () => {
       <Heading fontWeight="bold" color="#252F40" fontSize="xl">
         Spread
       </Heading>
-      <Stat>
+
+      <Stat mt="3">
         <StatHelpText>
           <StatArrow type="increase" />
           4% a mais em Dezembro
