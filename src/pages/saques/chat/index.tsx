@@ -20,7 +20,7 @@ const Chat = () => {
       <Table variant="simple">
         <Thead>
           <Tr>
-            <Th textAlign="center">Nome</Th>
+            <Th textAlign="center">Cliente</Th>
             <Th textAlign="center">Cpf</Th>
             <Th textAlign="center">Saldo na conta da Time Back</Th>
             <Th textAlign="center">Valor da Solicitação do Saque</Th>
@@ -42,7 +42,7 @@ const Chat = () => {
             status: Boolean(Math.round(Math.random())),
           })).map((x, index: number) => (
             <Tr key={`item-${index}`}>
-              <Td>
+              <Td textAlign="center">
                 <HStack>
                   {/*<Avatar size="xs" src="https://bit.ly/broken-link" />{' '}*/}
                   <Text fontWeight="bold" color="#252F40">
@@ -50,13 +50,13 @@ const Chat = () => {
                   </Text>
                 </HStack>
               </Td>
-              <Td>{x.cpf}</Td>
-              <Td>{x.valor}</Td>
-              <Td>{x.valor_solicitacao}</Td>
-              <Td>{x.data}</Td>
-              <Td>{x.hora}</Td>
-              <Td>{x.dados_bancario}</Td>
-              <Td>
+              <Td textAlign="center">{x.cpf}</Td>
+              <Td textAlign="center">{x.valor}</Td>
+              <Td textAlign="center">{x.valor_solicitacao}</Td>
+              <Td textAlign="center">{x.data}</Td>
+              <Td textAlign="center">{x.hora}</Td>
+              <Td textAlign="center">{x.dados_bancario}</Td>
+              <Td textAlign="center">
                 <Status status={x.status} />
               </Td>
             </Tr>

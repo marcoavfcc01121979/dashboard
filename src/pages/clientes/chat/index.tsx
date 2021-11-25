@@ -27,6 +27,7 @@ const Chat = () => {
             <Th textAlign="center">Saldo Indicações(US$)</Th>
             <Th textAlign="center">Rentabilidade Acumulada</Th>
             <Th textAlign="center">Receita Gerada (US$)</Th>
+            <Th textAlign="center">Abertura da Conta</Th>
             {/*<Th>Status</Th>*/}
           </Tr>
         </Thead>
@@ -39,10 +40,11 @@ const Chat = () => {
             saldo_indicacoes: '35,00',
             rentabilidade: '112%',
             receita: '1000,00',
+            abertura_conta: '23/04/2018',
             // status: Boolean(Math.round(Math.random())),
           })).map((x, index: number) => (
             <Tr key={`item-${index}`}>
-              <Td>
+              <Td textAlign="center">
                 <HStack>
                   {/*<Avatar size="xs" src="https://bit.ly/broken-link" />{' '}*/}
                   <Text fontWeight="bold" color="#252F40">
@@ -50,12 +52,13 @@ const Chat = () => {
                   </Text>
                 </HStack>
               </Td>
-              <Td>{x.cpf}</Td>
-              <Td>{x.data}</Td>
-              <Td>{x.valor}</Td>
-              <Td>{x.saldo_indicacoes}</Td>
-              <Td>{x.rentabilidade}</Td>
-              <Td>{x.receita}</Td>
+              <Td textAlign="center">{x.cpf}</Td>
+              <Td textAlign="center">{x.data}</Td>
+              <Td textAlign="center">{x.valor}</Td>
+              <Td textAlign="center">{x.saldo_indicacoes}</Td>
+              <Td textAlign="center">{x.rentabilidade}</Td>
+              <Td textAlign="center">{x.receita}</Td>
+              <Td textAlign="center">{x.abertura_conta}</Td>
             </Tr>
           ))}
         </Tbody>

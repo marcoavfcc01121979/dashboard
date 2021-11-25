@@ -12,7 +12,7 @@ export const mockedStatsCard: StatsCardProps[] = [
   {
     icon: FiDroplet,
     type: 'decrease',
-    title: 'Saldo Anchor',
+    title: 'Receita Acumulada',
     value: '$2,300',
     valuePercentage: '+20',
   },

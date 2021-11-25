@@ -27,9 +27,9 @@ const Chat = () => {
       <Table variant="simple">
         <Thead>
           <Tr>
-            <Th>Cliente</Th>
-            <Th>Mensagem</Th>
-            <Th>Status</Th>
+            <Th textAlign="center">Cliente</Th>
+            <Th textAlign="center">Mensagem</Th>
+            <Th textAlign="center">Status</Th>
           </Tr>
         </Thead>
         <Tbody>
@@ -39,16 +39,16 @@ const Chat = () => {
             status: Boolean(Math.round(Math.random())),
           })).map((x, index: number) => (
             <Tr key={`item-${index}`}>
-              <Td>
+              <Td textAlign="center">
                 <HStack>
-                  <Avatar size="xs" src="https://bit.ly/broken-link" />{' '}
+                  {/*<Avatar size="xs" src="https://bit.ly/broken-link" />{' '}*/}
                   <Text fontWeight="bold" color="#252F40">
                     {x.user}
                   </Text>
                 </HStack>
               </Td>
-              <Td>{x.message}</Td>
-              <Td>
+              <Td textAlign="center">{x.message}</Td>
+              <Td textAlign="center">
                 <Status status={x.status} />
               </Td>
             </Tr>

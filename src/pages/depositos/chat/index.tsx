@@ -42,7 +42,7 @@ const Chat = () => {
             status: Boolean(Math.round(Math.random())),
           })).map((x, index: number) => (
             <Tr key={`item-${index}`}>
-              <Td>
+              <Td textAlign="center">
                 <HStack>
                   {/*<Avatar size="xs" src="https://bit.ly/broken-link" />{' '}*/}
                   <Text fontWeight="bold" color="#252F40">
@@ -50,14 +50,13 @@ const Chat = () => {
                   </Text>
                 </HStack>
               </Td>
-              <Td>{x.cpf}</Td>
-              <Td>{x.valor}</Td>
-              <Td>{x.data}</Td>
-              <Td>{x.hora}</Td>
-              <Td>{x.pre}</Td>
-              <Td>{x.pos}</Td>
-
-              <Td>
+              <Td textAlign="center">{x.cpf}</Td>
+              <Td textAlign="center">{x.valor}</Td>
+              <Td textAlign="center">{x.data}</Td>
+              <Td textAlign="center">{x.hora}</Td>
+              <Td textAlign="center">{x.pre}</Td>
+              <Td textAlign="center">{x.pos}</Td>
+              <Td textAlign="center">
                 <Status status={x.status} />
               </Td>
             </Tr>
