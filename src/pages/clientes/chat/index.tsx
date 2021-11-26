@@ -22,7 +22,6 @@ const Chat = () => {
           <Tr>
             <Th textAlign="center">Nome</Th>
             <Th textAlign="center">Cpf</Th>
-            <Th textAlign="center">Data</Th>
             <Th textAlign="center">Saldo (US$)</Th>
             <Th textAlign="center">Saldo Indicações(US$)</Th>
             <Th textAlign="center">Rentabilidade Acumulada</Th>
@@ -35,7 +34,6 @@ const Chat = () => {
           {Array.from({ length: 10 }, () => ({
             user: 'Creusa',
             cpf: 'xxx.xxx.xxx-xx',
-            data: '25/11/2021',
             valor: '1.000,00',
             saldo_indicacoes: '35,00',
             rentabilidade: '112%',
@@ -53,7 +51,6 @@ const Chat = () => {
                 </HStack>
               </Td>
               <Td textAlign="center">{x.cpf}</Td>
-              <Td textAlign="center">{x.data}</Td>
               <Td textAlign="center">{x.valor}</Td>
               <Td textAlign="center">{x.saldo_indicacoes}</Td>
               <Td textAlign="center">{x.rentabilidade}</Td>
