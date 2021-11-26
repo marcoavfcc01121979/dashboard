@@ -8,6 +8,10 @@ import Indicador from './indicador'
 const Depositos = () => {
   return (
     <Box>
+      <Heading fontWeight="bold" color="#252F40" fontSize="xl" mb="3">
+        Lucros
+      </Heading>
+
       <DepositosGraph />
 
       <Box shadow="inner">
