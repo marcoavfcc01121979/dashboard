@@ -1,4 +1,4 @@
-import { Heading, HStack } from '@chakra-ui/layout'
+import { Heading, SimpleGrid } from '@chakra-ui/layout'
 import { Stat, StatArrow, StatHelpText } from '@chakra-ui/stat'
 import React from 'react'
 import Box from '../../../components/box'
@@ -26,12 +26,17 @@ const Depositos = () => {
           </StatHelpText>
         </Stat>
 
-        <HStack width="100%" mt="5">
+        <SimpleGrid
+          mt="5"
+          columns={{ sm: 2, md: 3, xl: 4 }}
+          spacing={{ base: 5 }}
+          justifyContent="space-between"
+        >
           <Indicador title="Clientes" value="3,6k" selectedColor="#FF0080" />
           <Indicador title="Receita" value="$2m" selectedColor="#2152FF" />
           <Indicador title="Depósitos" value="$772" selectedColor="#F88436" />
           <Indicador title="Saques" value="$82" selectedColor="#EA0606" />
-        </HStack>
+        </SimpleGrid>
       </Box>
     </Box>
   )

@@ -14,7 +14,7 @@ export default function Dashboard() {
       {/** Indicadores */}
       <SimpleGrid
         columns={{ base: 1, sm: 2, md: 3, xl: 4 }}
-        spacing={{ base: 5, lg: 8 }}
+        spacing={{ base: 4, lg: 8 }}
       >
         {mockedStatsCard.map((x, index) => (
           <StatsCard
